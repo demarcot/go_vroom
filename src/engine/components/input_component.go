@@ -8,7 +8,7 @@ import (
 	"github.com/go-gl/glfw/v3.3/glfw"
 )
 
-var playerSpeed = 5.0; // temporary, should either be on player or in a physics component
+var playerSpeed = 200.0; // temporary, should either be on player or in a physics component
 
 type InputManager struct {
   Keys [348]bool;
