@@ -1,13 +1,14 @@
 package engine;
 
-import ()
+import (
+  math "demarcot/vroom/src/engine/math"
+)
 
 type Entity struct {
-  X int;
-  Y int;
+  Pos math.Vec2;
   Input InputComponent;
 };
 
-func (e *Entity) Update() {
-  e.Input.HandleInput(e);
+func (e *Entity) Update(timeElapsedMs int) {
+  e.Input.HandleInput(e, timeElapsedMs);
 }
